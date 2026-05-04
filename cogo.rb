@@ -5,21 +5,21 @@
 class Cogo < Formula
   desc "A terminal-native agentic CLI for Go developers."
   homepage "https://github.com/go-steer/cogo"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-steer/cogo/releases/download/v0.1.0/cogo_0.1.0_darwin_amd64.tar.gz"
-      sha256 "87870148456e690e7b3d7947fcfe8be9eb4d94e856c0fe784ad3c62241185cdd"
+      url "https://github.com/go-steer/cogo/releases/download/v0.1.1/cogo_0.1.1_darwin_amd64.tar.gz"
+      sha256 "36b63ea15465a2f871181c6e165f1767d610381d2adb6b3ccfff019edba5afe3"
 
       define_method(:install) do
         bin.install "cogo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-steer/cogo/releases/download/v0.1.0/cogo_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a90d5aabc783587f800a92c18be2ecf78a3456c2c714cc2bc64a665f52995b85"
+      url "https://github.com/go-steer/cogo/releases/download/v0.1.1/cogo_0.1.1_darwin_arm64.tar.gz"
+      sha256 "54e3e0c42e28cd68751ee02be6b6688690b416a5d0d1d7f512063c21d025cf47"
 
       define_method(:install) do
         bin.install "cogo"
@@ -29,15 +29,15 @@ class Cogo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-steer/cogo/releases/download/v0.1.0/cogo_0.1.0_linux_amd64.tar.gz"
-      sha256 "7d0dae1485159ae89331460dc32d082c168142be540184717a99d1dd592f83ac"
+      url "https://github.com/go-steer/cogo/releases/download/v0.1.1/cogo_0.1.1_linux_amd64.tar.gz"
+      sha256 "6cbed06159dfbd22acf05b3adc0df4fe7172e72bd56fecfe724aae3775480450"
       define_method(:install) do
         bin.install "cogo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-steer/cogo/releases/download/v0.1.0/cogo_0.1.0_linux_arm64.tar.gz"
-      sha256 "2a15c976123afb495d59644cba85a42e6c9964e4bb5e17206b627ed626851bbe"
+      url "https://github.com/go-steer/cogo/releases/download/v0.1.1/cogo_0.1.1_linux_arm64.tar.gz"
+      sha256 "bc570c5b5fb86ae1d0acfe9dfb22653200b940707232d9958c334ca8b37e7d82"
       define_method(:install) do
         bin.install "cogo"
       end
